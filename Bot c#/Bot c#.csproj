@@ -1,13 +1,30 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Bot_c_</RootNamespace>
+    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PublishAot>true</PublishAot>
-    <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Telegram -->
+    <PackageReference Include="Telegram.Bot" Version="19.0.0" />
+    
+    <!-- Discord -->
+    <PackageReference Include="DSharpPlus" Version="4.4.0" />
+    <PackageReference Include="DSharpPlus.VoiceNext" Version="4.4.0" />
+    
+    <!-- Matrix -->
+    <PackageReference Include="Matrix.NET.Core" Version="2.0.0" />
+    
+    <!-- HTTP клиент -->
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+    
+    <!-- Работа с аудио -->
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="FFMpegCore" Version="4.8.0" />
+  </ItemGroup>
 
 </Project>
